@@ -3,7 +3,7 @@ import './Nav.css'
 
 import {BsFillJournalBookmarkFill} from 'react-icons/bs'
 
-const Nav = ({authToken, setShowModal, showModal, setIsSignUp}) =>{
+const Nav = ({setShowModal, showModal, setIsSignUp}) =>{
   
   
   const handleClick = () =>{
@@ -11,6 +11,8 @@ const Nav = ({authToken, setShowModal, showModal, setIsSignUp}) =>{
     setIsSignUp(false)
   }
 
+  const authToken = true;
+  
   return (
     <nav>
       <div className="logo-container">
